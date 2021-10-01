@@ -15,3 +15,8 @@ It will create a directory ```.scannerwork``` that you should ```.gitignore```
 
 Check the result on http://localhost:9000/
 
+## Build image from source
+
+```shell
+docker build -t murer/sonar-sa:dev .
+```
