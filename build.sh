@@ -25,7 +25,8 @@ cmd_main() {
 }
 
 cmd_sample() {
-    cmd_main "$(pwd)/sample/python"
+    sonarsa_sample="${1?'sonarsa_sample'}"
+    cmd_main "$(pwd)/sample/$sonarsa_sample"
 }
 
 cmd_shell() {
