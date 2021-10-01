@@ -26,7 +26,7 @@ cmd_main() {
 
 cmd_sample() {
     sonarsa_sample="${1?'sonarsa_sample'}"
-    cmd_main "$(pwd)/sample/$sonarsa_sample"
+    cmd_main "$(pwd)/sample/sonar-sa-sample-$sonarsa_sample"
 }
 
 cmd_shell() {
