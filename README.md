@@ -13,5 +13,5 @@ It will create a directory ```.scannerwork``` that you should ```.gitignore```
         murer/sonar-sa
 ```
 
-Check the result on http://localhost:8000/
+Check the result on http://localhost:9000/
 
