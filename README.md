@@ -20,3 +20,12 @@ Check the result on http://localhost:9000/
 ```shell
 docker build -t murer/sonar-sa:dev .
 ```
+
+Check with our sample
+
+```shell
+    docker run --name sonar-sa --rm -it \
+        -p 9000:9000 \
+        -v "$(pwd)/sample/python:/opt/sonar-sa/src" \
+        murer/sonar-sa
+```
