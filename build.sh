@@ -24,9 +24,8 @@ cmd_main() {
         entrypoint/sonar-sa.sh main
 }
 
-cmd_sample() {
-    sonarsa_sample="${1?'sonarsa_sample'}"
-    cmd_main "$(pwd)/sample/sonar-sa-sample-$sonarsa_sample"
+cmd_sample_python() {
+    cmd_main "$(pwd)/sample/sonar-sa-sample-python"
 }
 
 cmd_shell() {
