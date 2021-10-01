@@ -27,5 +27,5 @@ Check with our sample
     docker run --name sonar-sa --rm -it \
         -p 9000:9000 \
         -v "$(pwd)/sample/python:/opt/sonar-sa/src" \
-        murer/sonar-sa
+        murer/sonar-sa:dev
 ```
