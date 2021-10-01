@@ -1,5 +1,11 @@
 # sonar-sa
 
+## Getting Started
+
+Run this in our source code directory.
+
+It will create a directory ```.scannerwork``` that you should ```.gitignore```
+
 ```shell
     docker run --name sonar-sa --rm -it \
         -p 9000:9000 \
