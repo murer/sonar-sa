@@ -1,0 +1,11 @@
+*~
+gen
+target
+.idea
+*.pyc
+.settings
+.project
+.classpath
+*.swp
+.scannerwork
+
