@@ -2,7 +2,7 @@
 
 set -xeuo pipefail
 
-cmd_server_start() {
+cmd_server_console() {
     cd /opt/sonarqube
     ./bin/linux-x86-64/sonar.sh console &
     cd -
@@ -44,8 +44,16 @@ cmd_scan() {
         "-Dsonar.login=$(cat /tmp/sonarqa.token)"
 }
 
+cmd_server_only() {
+    cmd_server_console
+    cmd_server_wait_for_start
+    cmd_server_project_create
+    cmd_server_token_generate
+    tail -f /dev/null
+}
+
 cmd_main() {
-    cmd_server_start
+    cmd_server_console
     cmd_server_wait_for_start
     cmd_server_project_create
     cmd_server_token_generate
