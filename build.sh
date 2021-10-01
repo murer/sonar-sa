@@ -28,7 +28,6 @@ cmd_sample_python() {
     cmd_main "$(pwd)/sample/sonar-sa-sample-python"
 }
 
-
 cmd_shell() {
     docker run --name sonar_shell --rm -it murer/sonar-sa:dev /bin/bash
 }
