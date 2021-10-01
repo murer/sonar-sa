@@ -12,3 +12,6 @@ It will create a directory ```.scannerwork``` that you should ```.gitignore```
         -v "$(pwd):/opt/sonar-sa/src" \
         murer/sonar-sa
 ```
+
+Check the result on http://localhost:8000/
+
